@@ -1,0 +1,1 @@
+sh /home/oracle/unattended_apex_install.sh > /home/oracle/unattended_apex_install.log
