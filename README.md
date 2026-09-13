@@ -34,21 +34,21 @@
     sudo ./create_oracle_docker.sh
 ```
 
->> ## Opsional (jika install di virtualbox)
->> ### Step untuk mengaktifkan shared folder virtualbox
->> 1. install package yang dibutuhkan
->> ```bash
->>     sudo dnf install -y docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
->> ```
->> 2. mount Guest Additions CD dari menu VirtualBox: Devices → Insert Guest Additions CD Image
->> 3. kemudian jalankan command ini secara berurutan dan reboot :
->> ```bash
->>     sudo mkdir -p /mnt/cdrom
->>     sudo mount /dev/cdrom /mnt/cdrom
->>     cd /mnt/cdrom
->>     sudo ./VBoxLinuxAdditions.run
->> ```
->> 4. tambahkan user sekarang ke group `vboxsf` dan reboot :
->> ```bash
->>     sudo usermod -aG vboxsf $USER
->> ```
+> ## Opsional (jika install di virtualbox)
+> ### Step untuk mengaktifkan shared folder virtualbox
+> 1. install package yang dibutuhkan
+> ```bash
+>     sudo dnf install -y docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
+> ```
+> 2. mount Guest Additions CD dari menu VirtualBox: Devices → Insert Guest Additions CD Image
+> 3. kemudian jalankan command ini secara berurutan dan reboot :
+> ```bash
+>     sudo mkdir -p /mnt/cdrom
+>     sudo mount /dev/cdrom /mnt/cdrom
+>     cd /mnt/cdrom
+>     sudo ./VBoxLinuxAdditions.run
+> ```
+> 4. tambahkan user sekarang ke group `vboxsf` dan reboot :
+> ```bash
+>     sudo usermod -aG vboxsf $USER
+> ```
