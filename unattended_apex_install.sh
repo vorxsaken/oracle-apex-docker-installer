@@ -127,12 +127,15 @@ echo 'sudo sh /home/oracle/scripts/start_ords.sh' > /opt/oracle/scripts/startup/
 EOF
 
 # Configure ORDS Standalone
+# Change security.externalSessionTrustedOrigins with your own domain
 su - <<EOF
 ords --config /etc/ords/config config set standalone.context.path /ords 
 ords --config /etc/ords/config config set standalone.doc.root /etc/ords/config/global/doc_root 
 ords --config /etc/ords/config config set standalone.http.port 8080
 ords --config /etc/ords/config config set standalone.static.context.path /i 
 ords --config /etc/ords/config config set standalone.static.path /home/oracle/software/apex/images/ 
+ords --config /etc/ords/config config set security.externalSessionTrustedOrigins "https://docker.dreadrim.site"
+ords --config /etc/ords/config config set security.httpsHeaderCheck "X-Forwarded-Proto: https"
 ords --config /etc/ords/config config set jdbc.InitialLimit 15 
 ords --config /etc/ords/config config set jdbc.MaxLimit 25 
 ords --config /etc/ords/config config set jdbc.MinLimit 15  
