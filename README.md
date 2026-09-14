@@ -15,8 +15,6 @@
     sudo systemctl start docker
     sudo systemctl enable docker
 ```
-3. Jalankan script `create_oracle_docker.sh`.
-4. Selesai.
 
 ## B. Clone repository ini
 1. clone repository ini
