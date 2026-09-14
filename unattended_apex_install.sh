@@ -134,7 +134,7 @@ ords --config /etc/ords/config config set standalone.doc.root /etc/ords/config/g
 ords --config /etc/ords/config config set standalone.http.port 8080
 ords --config /etc/ords/config config set standalone.static.context.path /i 
 ords --config /etc/ords/config config set standalone.static.path /home/oracle/software/apex/images/ 
-ords --config /etc/ords/config config set security.externalSessionTrustedOrigins "https://docker.dreadrim.site"
+ords --config /etc/ords/config config set security.externalSessionTrustedOrigins "https://your-own-domain.care"
 ords --config /etc/ords/config config set security.httpsHeaderCheck "X-Forwarded-Proto: https"
 ords --config /etc/ords/config config set jdbc.InitialLimit 15 
 ords --config /etc/ords/config config set jdbc.MaxLimit 25 

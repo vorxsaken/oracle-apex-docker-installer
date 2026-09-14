@@ -1,5 +1,7 @@
 # Step Melakukan Instalasi
 
+> *Step instalasi ini berekspektasi bahwa kamu sudah mempunyai public domain dan memiliki pengetahuan tentang setting cloudflare tunnel di lingkungan linux.*
+
 ## A. Install docker
 1. Jika menggunakan linux server berbasis RHEL install docker dulu
 ```bash
@@ -29,6 +31,11 @@
 ```bash
     cd oracle-apex-docker-installer
 ```
+4. edit file `unattended_apex_install.sh`
+``` bash
+    nano unattended_apex_install.sh
+```
+5. pergi ke line `137` dan edit domain ords config `security.externalSessionTrustedOrigins` menjadi domainmu sendiri, contoh : `https://your-own-domain.care` → `https://my-domain.care`.
 4. Jalankan script `create_oracle_docker.sh`
 ```bash
     sudo ./create_oracle_docker.sh
