@@ -1,6 +1,6 @@
 # Step Melakukan Instalasi
 
-> *Step instalasi ini berekspektasi bahwa kamu sudah mempunyai public domain dan memiliki pengetahuan tentang setting cloudflare tunnel di lingkungan linux.*
+> *Step instalasi ini berekspektasi bahwa kamu sudah mempunyai public domain dan memiliki sedikit pengetahuan tentang setting cloudflare tunnel di lingkungan linux.*
 
 ## A. Install docker
 1. Jika menggunakan linux server berbasis RHEL install docker dulu
@@ -40,6 +40,16 @@
 ```bash
     sudo ./create_oracle_docker.sh
 ```
+
+## C. Setting Cloudflare Tunnel
+1. pergi ke web page [cloudflare](https://dash.cloudflare.com/) dan pada sidebar pilih **Zero Trust**
+2. pada sidebar expand **Networks** → **Tunnels & Mesh**.
+3. pada kanan atas klik button **Create Tunnel**
+4. klik button **Select Cloudflared**
+5. pada page *Create Tunnel* field **Name Your Tunnel** masukkan nama tunnel, contoh `tunnel-1`.
+6. pada page *Configure* region *Select your device operating system* ubah **Windows** → **Red Hat**.
+7. ikuti step yang muncul setelah mengubah select option itu, klik *next*.
+8. selesai.
 
 > ## Opsional (jika install di virtualbox)
 > ### Step untuk mengaktifkan shared folder virtualbox
