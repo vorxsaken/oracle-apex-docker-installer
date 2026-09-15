@@ -2,6 +2,15 @@
 
 > *Step instalasi ini berekspektasi bahwa kamu sudah mempunyai public domain dan memiliki sedikit pengetahuan tentang setting cloudflare tunnel di lingkungan linux.*
 
+## Tech Stack Yang Digunakan
+
+|Nama|Versi|
+| :--- | :--- |
+| ORACLE Database | 23.26.1.0.0 |
+| ORACLE APEX | 24.2 |
+| ORDS (Oracle Rest Data Service) | 26.2 |
+| Docker | 29.8.0, build 88096ef |
+
 ## A. Install docker
 1. Jika menggunakan linux server berbasis RHEL install docker dulu
 ```bash
